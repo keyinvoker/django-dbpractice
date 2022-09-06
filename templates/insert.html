@@ -1,0 +1,30 @@
+<h1>INSERT</h1>
+{% for message in messages %}
+<h5 class="warning-msg">{{message}}</h5>
+{% endfor %}
+
+<form action="insert" method="post">
+  {% csrf_token %}
+  <label for="name">Name: <input type="text" name="name" id="" /></label
+  ><br />
+  <label for="phone">Phone: <input type="text" name="phone" id="" /></label
+  ><br />
+  <label for="email">Email: <input type="email" name="email" id="" /></label
+  ><br />
+  <label for="address">Address: <input type="text" name="address" id="" /></label
+  ><br />
+  <label for="city">City: <input type="text" name="city" id="" /></label
+  ><br />
+  <label for="zip">ZIP: <input type="text" name="zip" id="" /></label
+  ><br />
+  <label for="income">Income: <input type="number" name="income" id="" /></label
+  ><br />
+  <label for="password"
+    >Password: <input type="password" name="password" id="" /></label
+  ><br />
+  <label for="password2"
+    >Confirm Password: <input type="password" name="password2" id=""
+  /></label>
+  <br />
+  <input type="submit" />
+</form>

@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>ZIP</th>
+        <th>Income</th>
+        <th>Updated</th>
+    </tr>
+    {% for p in people %}
+    <tr>
+        <td>{{p.name}}</td>
+        <td>{{p.phone}}</td>
+        <td>{{p.email}}</td>
+        <td>{{p.address}}</td>
+        <td>{{p.city}}</td>
+        <td>{{p.zip}}</td>
+        <td>{{p.income}}</td>
+        <td>{{p.updated}}</td>
+    </tr>
+    {% endfor %}
+</table>
